@@ -1,0 +1,23 @@
+{
+  "name": "docker-sinopia",
+  "version": "1.0.0-alpha3",
+  "description": "Sinopia is a private npm repository server",
+  "main": "",
+  "dependencies": {
+    "sinopia": "^1.0.0-alpha.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drewwells/docker-sinopia.git"
+  },
+  "author": "Drew Wells <dwells@rmn.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewwells/docker-sinopia/issues"
+  },
+  "homepage": "https://github.com/drewwells/docker-sinopia"
+}
