@@ -1,14 +1,10 @@
 FROM google/nodejs:0.10.33
 MAINTAINER Drew Wells <drew.wells00@gmail.com>
 
-RUN mkdir -p /opt/sinopia/storage
+VOLUME /opt/sinopia
 WORKDIR /opt/sinopia
-RUN npm install js-yaml knksmith57/sinopia#fix-scoped-packages
+RUN npm install sinopia@1.0.0-alpha.3
 RUN npm cache clear
 
-ADD /start.sh /opt/sinopia/start.sh
-
-CMD ["/opt/sinopia/start.sh"]
-
 EXPOSE 4873
-VOLUME /opt/sinopia
+CMD ["node", "/opt/sinopia/node_modules/sinopia/bin/sinopia" "--config" "/opt/sinopia/config.yaml"]
