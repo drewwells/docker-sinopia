@@ -4,7 +4,7 @@ Sinopia is a private npm repository server
 
 ### Installing Image
 
-`docker pull keyvanfatehi/sinopia:0.13.0`
+`docker pull drewwells/sinopia`
 
 ### Creating Container
 
